@@ -19,4 +19,17 @@ module.exports = {
       config: {},
     },
   ],
+  publishers: [
+    {
+      name: '@electron-forge/publisher-github',
+      config: {
+        repository: {
+          owner: 'Celio Junior',
+          name: 'eletronTeste',
+        },
+        prerelease: false,
+        draft: true,
+      },
+    },
+  ],
 };
